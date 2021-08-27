@@ -1,0 +1,28 @@
+{
+  "kind": "singleType",
+  "collectionName": "global",
+  "info": {
+    "name": "Global"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title_footer": {
+      "type": "string",
+      "required": true
+    },
+    "phone": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "address": {
+      "type": "string"
+    }
+  }
+}

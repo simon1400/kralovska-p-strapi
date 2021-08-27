@@ -1,0 +1,67 @@
+{
+  "kind": "collectionType",
+  "collectionName": "produkties",
+  "info": {
+    "name": "Produkty",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "available": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "code": {
+      "type": "biginteger"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "images": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "related": {
+      "collection": "produkty",
+      "via": "produkty"
+    },
+    "produkty": {
+      "model": "produkty",
+      "via": "related"
+    },
+    "brand": {
+      "model": "brand",
+      "via": "produkty"
+    },
+    "category": {
+      "collection": "category",
+      "via": "products",
+      "dominant": true
+    }
+  }
+}

@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "brands",
   "info": {
-    "name": "brand"
+    "name": "brand",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -20,9 +21,24 @@
       "type": "uid",
       "targetField": "title"
     },
-    "produkty": {
+    "products": {
       "via": "brand",
       "collection": "produkty"
+    },
+    "add_title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "categories": {
+      "via": "brands",
+      "collection": "category"
+    },
+    "parameters": {
+      "collection": "parameters",
+      "via": "brands",
+      "dominant": true
     }
   }
 }

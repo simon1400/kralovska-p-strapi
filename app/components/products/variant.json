@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_products_variants",
+  "info": {
+    "name": "variant",
+    "icon": "list",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "nazev": {
+      "type": "string"
+    },
+    "price": {
+      "type": "biginteger"
+    }
+  }
+}

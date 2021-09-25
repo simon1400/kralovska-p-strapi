@@ -2,7 +2,8 @@
   "kind": "singleType",
   "collectionName": "global",
   "info": {
-    "name": "Global"
+    "name": "Global",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -23,6 +24,14 @@
     },
     "address": {
       "type": "string"
+    },
+    "banner": {
+      "type": "component",
+      "repeatable": false,
+      "component": "links.banner"
+    },
+    "copyright": {
+      "type": "text"
     }
   }
 }

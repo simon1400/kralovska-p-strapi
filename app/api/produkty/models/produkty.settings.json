@@ -54,14 +54,23 @@
       "model": "produkty",
       "via": "related"
     },
-    "brand": {
-      "model": "brand",
-      "via": "produkty"
-    },
     "category": {
-      "collection": "category",
       "via": "products",
+      "collection": "category",
       "dominant": true
+    },
+    "Variants": {
+      "type": "component",
+      "repeatable": true,
+      "component": "products.variant"
+    },
+    "brand": {
+      "via": "products",
+      "model": "brand"
+    },
+    "values": {
+      "collection": "values",
+      "via": "produkty"
     }
   }
 }

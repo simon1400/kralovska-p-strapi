@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "values",
+  "info": {
+    "name": "values"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "parameters": {
+      "via": "values",
+      "collection": "parameters"
+    },
+    "produkty": {
+      "via": "values",
+      "model": "produkty"
+    }
+  }
+}

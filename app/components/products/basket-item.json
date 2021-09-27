@@ -1,0 +1,44 @@
+{
+  "collectionName": "components_products_basket_items",
+  "info": {
+    "name": "basketItem",
+    "icon": "apple-alt"
+  },
+  "options": {},
+  "attributes": {
+    "variant": {
+      "type": "string"
+    },
+    "brand": {
+      "type": "string"
+    },
+    "price": {
+      "type": "biginteger"
+    },
+    "idVariant": {
+      "type": "biginteger"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "count": {
+      "type": "integer"
+    },
+    "idProduct": {
+      "type": "biginteger"
+    },
+    "title": {
+      "type": "string"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

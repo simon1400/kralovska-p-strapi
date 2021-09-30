@@ -18,9 +18,9 @@
       "via": "values",
       "collection": "parameters"
     },
-    "produkty": {
+    "produkties": {
       "via": "values",
-      "model": "produkty"
+      "collection": "produkty"
     }
   }
 }

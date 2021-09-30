@@ -46,13 +46,14 @@
       "required": false,
       "pluginOptions": {}
     },
-    "related": {
+    "relateds": {
       "collection": "produkty",
-      "via": "produkty"
+      "via": "produkties",
+      "dominant": true
     },
-    "produkty": {
-      "model": "produkty",
-      "via": "related"
+    "produkties": {
+      "collection": "produkty",
+      "via": "relateds"
     },
     "category": {
       "via": "products",
@@ -70,7 +71,8 @@
     },
     "values": {
       "collection": "values",
-      "via": "produkty"
+      "via": "produkties",
+      "dominant": true
     }
   }
 }

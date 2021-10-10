@@ -2,7 +2,7 @@
   "kind": "collectionType",
   "collectionName": "brands",
   "info": {
-    "name": "brand",
+    "name": "4 Značky -",
     "description": ""
   },
   "options": {
@@ -36,8 +36,8 @@
       "collection": "category"
     },
     "parameters": {
-      "collection": "parameters",
       "via": "brands",
+      "collection": "parameters",
       "dominant": true
     }
   }

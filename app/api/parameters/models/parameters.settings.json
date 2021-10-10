@@ -2,7 +2,7 @@
   "kind": "collectionType",
   "collectionName": "parameters",
   "info": {
-    "name": "parameters",
+    "name": "Parametry -",
     "description": ""
   },
   "options": {
@@ -18,8 +18,8 @@
       "unique": true
     },
     "values": {
-      "collection": "values",
       "via": "parameters",
+      "collection": "values",
       "dominant": true
     },
     "brands": {

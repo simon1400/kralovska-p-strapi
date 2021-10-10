@@ -2,7 +2,7 @@
   "kind": "collectionType",
   "collectionName": "produkties",
   "info": {
-    "name": "Produkty",
+    "name": "1 Produkty -",
     "description": ""
   },
   "options": {
@@ -70,8 +70,8 @@
       "model": "brand"
     },
     "values": {
-      "collection": "values",
       "via": "produkties",
+      "collection": "values",
       "dominant": true
     }
   }

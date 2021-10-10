@@ -2,7 +2,7 @@
   "kind": "collectionType",
   "collectionName": "categories",
   "info": {
-    "name": "category",
+    "name": "3 Kategorie -",
     "description": ""
   },
   "options": {
@@ -33,8 +33,8 @@
       "collection": "produkty"
     },
     "parameters": {
-      "collection": "parameters",
       "via": "categories",
+      "collection": "parameters",
       "dominant": true
     },
     "brands": {

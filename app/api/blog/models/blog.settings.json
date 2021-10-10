@@ -41,6 +41,11 @@
     },
     "add_content": {
       "type": "richtext"
+    },
+    "cta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "links.button"
     }
   }
 }

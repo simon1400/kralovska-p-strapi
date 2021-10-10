@@ -21,6 +21,13 @@
     },
     "sale_from": {
       "type": "biginteger"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "online",
+        "dobirka"
+      ]
     }
   }
 }

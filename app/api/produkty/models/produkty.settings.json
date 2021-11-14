@@ -73,6 +73,11 @@
       "via": "produkties",
       "collection": "values",
       "dominant": true
+    },
+    "meta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo.meta"
     }
   }
 }

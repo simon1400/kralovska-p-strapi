@@ -11,11 +11,7 @@
  */
 
 module.exports = {
-  /**
-   * Simple example.
-   * Every monday at 1am.
-   */
-  // '0 1 * * 1': () => {
-  //
-  // }
+  '0 */12 * * *': () => {
+    strapi.plugins.sitemap.services.sitemap.createSitemap();
+  },
 };

@@ -11,7 +11,8 @@
       "type": "string"
     },
     "price": {
-      "type": "biginteger"
+      "type": "biginteger",
+      "required": true
     }
   }
 }

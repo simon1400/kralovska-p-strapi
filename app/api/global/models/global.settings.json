@@ -32,6 +32,13 @@
     },
     "copyright": {
       "type": "text"
+    },
+    "nf_title": {
+      "type": "string",
+      "required": true
+    },
+    "nf_content": {
+      "type": "richtext"
     }
   }
 }

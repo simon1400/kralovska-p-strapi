@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "blogs",
+  "collectionName": "category_articles",
   "info": {
-    "name": "2 Články -",
+    "name": "category-articles",
     "description": ""
   },
   "options": {
@@ -22,10 +22,6 @@
       "targetField": "title",
       "required": true
     },
-    "content": {
-      "type": "richtext",
-      "required": true
-    },
     "image": {
       "model": "file",
       "via": "related",
@@ -36,28 +32,15 @@
       "required": false,
       "pluginOptions": {}
     },
-    "add_title": {
-      "type": "string"
-    },
-    "add_content": {
-      "type": "richtext"
-    },
-    "cta": {
-      "type": "component",
-      "repeatable": false,
-      "component": "links.button"
+    "articles": {
+      "via": "category",
+      "collection": "blog",
+      "dominant": true
     },
     "meta": {
       "type": "component",
       "repeatable": false,
       "component": "seo.meta"
-    },
-    "category": {
-      "via": "articles",
-      "collection": "category-articles"
-    },
-    "iframe": {
-      "type": "richtext"
     }
   }
 }

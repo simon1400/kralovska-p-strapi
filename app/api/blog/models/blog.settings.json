@@ -54,7 +54,8 @@
     },
     "category": {
       "via": "articles",
-      "collection": "category-articles"
+      "collection": "category-articles",
+      "model": "category-articles"
     },
     "iframe": {
       "type": "richtext"

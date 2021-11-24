@@ -24,15 +24,11 @@ const configuration = {
     'link',
     'bulletedList',
     'numberedList',
-    '|',
-    'indent',
-    'outdent',
-    '|',
     'blockQuote',
     'insertTable',
-    'mediaEmbed',
     'undo',
     'redo',
+    "removeFormat"
   ],
 };
 

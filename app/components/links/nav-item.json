@@ -9,7 +9,7 @@
   "attributes": {
     "name": {
       "type": "string",
-      "required": false
+      "required": true
     },
     "link": {
       "type": "string",

@@ -34,7 +34,8 @@
     },
     "articles": {
       "via": "category",
-      "collection": "blog"
+      "collection": "blog",
+      "dominant": true
     },
     "meta": {
       "type": "component",

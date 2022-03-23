@@ -58,7 +58,7 @@
       "model": "category-articles"
     },
     "iframe": {
-      "type": "richtext"
+      "type": "string"
     }
   }
 }

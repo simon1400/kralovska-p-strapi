@@ -1,0 +1,61 @@
+{
+  "kind": "collectionType",
+  "collectionName": "categories",
+  "info": {
+    "name": "3 Kategorie -",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    },
+    "add_title": {
+      "type": "text"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "products": {
+      "via": "category",
+      "collection": "produkty"
+    },
+    "parameters": {
+      "via": "categories",
+      "collection": "parameters",
+      "dominant": true
+    },
+    "brands": {
+      "via": "categories",
+      "collection": "brand",
+      "dominant": true
+    },
+    "meta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo.meta"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

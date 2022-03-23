@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "delivery",
+  "info": {
+    "name": "Dopravy -",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "price": {
+      "type": "biginteger",
+      "default": "0"
+    },
+    "sale_from": {
+      "type": "biginteger"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "zasilkovna"
+      ]
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_products_basket_items",
+  "info": {
+    "name": "basketItem",
+    "icon": "apple-alt",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "variant": {
+      "type": "string"
+    },
+    "brand": {
+      "type": "string"
+    },
+    "price": {
+      "type": "biginteger"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "count": {
+      "type": "integer"
+    },
+    "idProduct": {
+      "type": "biginteger"
+    },
+    "title": {
+      "type": "string"
+    },
+    "guid": {
+      "type": "string"
+    }
+  }
+}

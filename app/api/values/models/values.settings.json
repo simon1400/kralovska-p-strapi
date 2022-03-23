@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "values",
+  "info": {
+    "name": "Hodnoty -",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "parameters": {
+      "via": "values",
+      "collection": "parameters"
+    },
+    "produkties": {
+      "via": "values",
+      "collection": "produkty"
+    }
+  }
+}

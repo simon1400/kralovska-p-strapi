@@ -1,0 +1,44 @@
+{
+  "kind": "singleType",
+  "collectionName": "global",
+  "info": {
+    "name": "Globální obsah",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title_footer": {
+      "type": "string",
+      "required": true
+    },
+    "phone": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "address": {
+      "type": "string"
+    },
+    "banner": {
+      "type": "component",
+      "repeatable": false,
+      "component": "links.banner"
+    },
+    "copyright": {
+      "type": "text"
+    },
+    "nf_title": {
+      "type": "string",
+      "required": true
+    },
+    "nf_content": {
+      "type": "richtext"
+    }
+  }
+}

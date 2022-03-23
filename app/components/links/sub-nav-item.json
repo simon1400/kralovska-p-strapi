@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_links_sub_nav_items",
+  "info": {
+    "name": "sub_nav_item",
+    "icon": "code-branch",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "link": {
+      "type": "string",
+      "required": false
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "brand": {
+      "model": "brand"
+    },
+    "category": {
+      "model": "category"
+    },
+    "blog": {
+      "model": "blog"
+    }
+  }
+}

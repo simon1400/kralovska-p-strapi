@@ -1,0 +1,93 @@
+{
+  "kind": "collectionType",
+  "collectionName": "produkties",
+  "info": {
+    "name": "1 Produkty -",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "available": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "images": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "relateds": {
+      "collection": "produkty",
+      "via": "produkties",
+      "dominant": true
+    },
+    "produkties": {
+      "collection": "produkty",
+      "via": "relateds"
+    },
+    "category": {
+      "via": "products",
+      "collection": "category",
+      "dominant": true
+    },
+    "Variants": {
+      "type": "component",
+      "repeatable": true,
+      "component": "products.variant"
+    },
+    "brand": {
+      "via": "products",
+      "model": "brand"
+    },
+    "values": {
+      "via": "produkties",
+      "collection": "values",
+      "dominant": true
+    },
+    "meta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo.meta"
+    },
+    "stock": {
+      "type": "string"
+    },
+    "guid": {
+      "type": "string",
+      "required": true
+    },
+    "code": {
+      "type": "string"
+    },
+    "product_id": {
+      "type": "string"
+    }
+  }
+}

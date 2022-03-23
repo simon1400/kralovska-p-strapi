@@ -1,0 +1,59 @@
+{
+  "kind": "collectionType",
+  "collectionName": "brands",
+  "info": {
+    "name": "4 Značky -",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "products": {
+      "via": "brand",
+      "collection": "produkty"
+    },
+    "add_title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "categories": {
+      "via": "brands",
+      "collection": "category"
+    },
+    "parameters": {
+      "via": "brands",
+      "collection": "parameters",
+      "dominant": true
+    },
+    "meta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo.meta"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

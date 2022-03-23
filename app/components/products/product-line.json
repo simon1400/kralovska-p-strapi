@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_products_product_lines",
+  "info": {
+    "name": "product line",
+    "icon": "project-diagram",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "brand": {
+      "type": "string"
+    },
+    "text": {
+      "type": "text"
+    },
+    "products": {
+      "collection": "produkty"
+    },
+    "button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "links.button"
+    }
+  }
+}

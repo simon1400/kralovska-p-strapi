@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/platbies",
+      "handler": "platby.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/platbies/count",
+      "handler": "platby.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/platbies/:id",
+      "handler": "platby.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/platbies",
+      "handler": "platby.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/platbies/:id",
+      "handler": "platby.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/platbies/:id",
+      "handler": "platby.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

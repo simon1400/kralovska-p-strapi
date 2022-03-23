@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_products_filters",
+  "info": {
+    "name": "filter",
+    "icon": "align-justify"
+  },
+  "options": {},
+  "attributes": {
+    "parameter": {
+      "model": "parameters"
+    },
+    "values": {
+      "collection": "values"
+    }
+  }
+}

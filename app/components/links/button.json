@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_button_buttons",
+  "info": {
+    "name": "button",
+    "icon": "external-link-alt"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string",
+      "required": true
+    },
+    "link": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

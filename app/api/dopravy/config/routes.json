@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/dopravies",
+      "handler": "dopravy.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/dopravies/count",
+      "handler": "dopravy.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/dopravies/:id",
+      "handler": "dopravy.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/dopravies",
+      "handler": "dopravy.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/dopravies/:id",
+      "handler": "dopravy.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/dopravies/:id",
+      "handler": "dopravy.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

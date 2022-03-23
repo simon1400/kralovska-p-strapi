@@ -1,0 +1,43 @@
+{
+  "collectionName": "components_links_nav_items",
+  "info": {
+    "name": "nav_item",
+    "icon": "align-left",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "link": {
+      "type": "string",
+      "required": false
+    },
+    "sub_nav_item": {
+      "type": "component",
+      "repeatable": true,
+      "component": "links.sub-nav-item"
+    },
+    "blog": {
+      "model": "blog"
+    },
+    "brand": {
+      "model": "brand"
+    },
+    "category": {
+      "model": "category"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

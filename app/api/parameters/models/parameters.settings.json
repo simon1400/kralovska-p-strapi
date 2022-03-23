@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "parameters",
+  "info": {
+    "name": "Parametry -",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "values": {
+      "via": "parameters",
+      "collection": "values",
+      "dominant": true
+    },
+    "brands": {
+      "via": "parameters",
+      "collection": "brand"
+    },
+    "categories": {
+      "via": "parameters",
+      "collection": "category"
+    }
+  }
+}

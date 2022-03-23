@@ -39,6 +39,19 @@
     },
     "nf_content": {
       "type": "richtext"
+    },
+    "endTitle": {
+      "type": "string",
+      "required": true
+    },
+    "terms": {
+      "model": "blog"
+    },
+    "delivery": {
+      "model": "blog"
+    },
+    "gdpr": {
+      "model": "blog"
     }
   }
 }

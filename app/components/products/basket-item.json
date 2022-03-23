@@ -27,6 +27,9 @@
     },
     "title": {
       "type": "string"
+    },
+    "guid": {
+      "type": "string"
     }
   }
 }

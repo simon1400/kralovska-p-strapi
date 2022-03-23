@@ -30,9 +30,6 @@
       "default": true,
       "required": true
     },
-    "code": {
-      "type": "biginteger"
-    },
     "content": {
       "type": "richtext"
     },
@@ -78,6 +75,19 @@
       "type": "component",
       "repeatable": false,
       "component": "seo.meta"
+    },
+    "stock": {
+      "type": "string"
+    },
+    "guid": {
+      "type": "string",
+      "required": true
+    },
+    "code": {
+      "type": "string"
+    },
+    "product_id": {
+      "type": "string"
     }
   }
 }

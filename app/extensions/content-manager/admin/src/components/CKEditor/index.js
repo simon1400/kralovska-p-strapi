@@ -27,7 +27,8 @@ const configuration = {
     'blockQuote',
     'insertTable',
     'undo',
-    'redo'
+    'redo',
+    "removeFormat"
   ],
 };
 

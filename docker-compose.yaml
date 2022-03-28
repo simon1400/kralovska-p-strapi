@@ -9,6 +9,9 @@ services:
       DATABASE_PORT: 5432
       DATABASE_USERNAME: strapi
       DATABASE_PASSWORD: strapi
+      CLOUDINARY_NAME: hardart-cz
+      CLOUDINARY_KEY: 529325956937259
+      CLOUDINARY_SECRET: 8jd-Zp5bvuDvu89uZYHyqr-s2fU
     volumes:
       - ./app:/srv/app
     ports:

@@ -1,0 +1,8 @@
+{
+  "provider": "cloudinary",
+  "providerOptions": {
+    "cloud_name": "hardart-cz",
+    "api_key": "529325956937259",
+    "api_secret": "8jd-Zp5bvuDvu89uZYHyqr-s2fU"
+  }
+}

@@ -15,6 +15,7 @@
     "@ckeditor/ckeditor5-editor-classic": "^31.0.0",
     "@ckeditor/ckeditor5-react": "^3.0.3",
     "@ckeditor/ckeditor5-remove-format": "^31.0.0",
+    "@strapi/provider-upload-cloudinary": "^4.1.5",
     "knex": "0.21.18",
     "pg": "8.5.1",
     "strapi": "3.6.8",
@@ -29,6 +30,7 @@
     "strapi-plugin-sitemap": "^1.2.5",
     "strapi-plugin-upload": "3.6.8",
     "strapi-plugin-users-permissions": "3.6.8",
+    "strapi-provider-upload-cloudinary": "^3.6.8",
     "strapi-utils": "3.6.8"
   },
   "author": {

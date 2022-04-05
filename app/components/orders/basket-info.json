@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_orders_basket_infos",
+  "info": {
+    "name": "basketInfo",
+    "icon": "balance-scale-right"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "value": {
+      "type": "string"
+    }
+  }
+}

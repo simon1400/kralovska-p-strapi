@@ -2,7 +2,7 @@
   "kind": "collectionType",
   "collectionName": "categories",
   "info": {
-    "name": "3 Kategorie -",
+    "name": "Kategorie produktů -",
     "description": ""
   },
   "options": {
@@ -48,6 +48,25 @@
       "component": "seo.meta"
     },
     "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "sub": {
+      "collection": "category",
+      "via": "parent",
+      "dominant": true
+    },
+    "parent": {
+      "collection": "category",
+      "via": "sub"
+    },
+    "icon": {
       "model": "file",
       "via": "related",
       "allowedTypes": [

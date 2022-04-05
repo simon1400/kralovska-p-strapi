@@ -36,16 +36,6 @@
       "repeatable": true,
       "component": "products.product-line"
     },
-    "partners": {
-      "collection": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images"
-      ],
-      "plugin": "upload",
-      "required": false,
-      "pluginOptions": {}
-    },
     "subtitle": {
       "type": "string"
     },
@@ -53,6 +43,16 @@
       "type": "component",
       "repeatable": false,
       "component": "seo.meta"
+    },
+    "logo_company": {
+      "type": "component",
+      "repeatable": true,
+      "component": "products.logo-company"
+    },
+    "articles": {
+      "type": "component",
+      "repeatable": true,
+      "component": "content.articles"
     }
   }
 }

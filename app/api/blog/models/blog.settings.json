@@ -2,7 +2,7 @@
   "kind": "collectionType",
   "collectionName": "blogs",
   "info": {
-    "name": "2 Články -",
+    "name": "Články -",
     "description": ""
   },
   "options": {
@@ -54,8 +54,7 @@
     },
     "category": {
       "via": "articles",
-      "collection": "category-articles",
-      "model": "category-articles"
+      "collection": "category-articles"
     },
     "iframe": {
       "type": "text"

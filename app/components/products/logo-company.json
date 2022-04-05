@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_products_logo_companies",
+  "info": {
+    "name": "logo_company",
+    "icon": "archway"
+  },
+  "options": {},
+  "attributes": {
+    "brands": {
+      "model": "brand"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    }
+  }
+}

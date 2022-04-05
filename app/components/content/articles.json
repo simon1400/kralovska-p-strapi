@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_content_articles",
+  "info": {
+    "name": "articles",
+    "icon": "database"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "text": {
+      "type": "text"
+    },
+    "article": {
+      "model": "blog"
+    }
+  }
+}

@@ -52,6 +52,16 @@
     },
     "gdpr": {
       "model": "blog"
+    },
+    "basketInfo": {
+      "type": "component",
+      "repeatable": true,
+      "component": "orders.basket-info"
+    },
+    "support": {
+      "type": "component",
+      "repeatable": false,
+      "component": "content.articles"
     }
   }
 }

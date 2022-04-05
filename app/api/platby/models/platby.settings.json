@@ -28,6 +28,19 @@
         "online",
         "dobirka"
       ]
+    },
+    "deliveries": {
+      "via": "pays",
+      "collection": "dopravy"
+    },
+    "state": {
+      "type": "enumeration",
+      "enum": [
+        "cz",
+        "sk"
+      ],
+      "default": "cz",
+      "required": true
     }
   }
 }

@@ -27,6 +27,20 @@
       "enum": [
         "zasilkovna"
       ]
+    },
+    "pays": {
+      "via": "deliveries",
+      "collection": "platby",
+      "dominant": true
+    },
+    "state": {
+      "type": "enumeration",
+      "enum": [
+        "cz",
+        "sk"
+      ],
+      "default": "cz",
+      "required": true
     }
   }
 }

@@ -2,7 +2,7 @@
   "kind": "collectionType",
   "collectionName": "produkties",
   "info": {
-    "name": "1 Produkty -",
+    "name": "Produkty -",
     "description": ""
   },
   "options": {
@@ -88,6 +88,10 @@
     },
     "product_id": {
       "type": "string"
+    },
+    "support": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
